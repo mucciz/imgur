@@ -1,0 +1,186 @@
+{% extends 'layout.html'%}
+{% load static %}
+{% block content %}
+<nav id="imgur-main-nav" role="navigation">
+    <a href="#" class="js-imgur-nav-toggle imgur-nav-toggle active"><i></i></a>
+    <div class="js-fullheight imgur-table">
+        <div class="imgur-table-cell js-fullheight">
+            <div class="row">
+                <div class="col-md-12">
+                    <form action="{% url 'search_results' %}" role="search">
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="search" placeholder="Enter any key to search..."
+                                name="article">
+                            <button type="submit" class="btn "><i class="icon-search3"></i></button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <ul>
+                        <li class="active"><a href="{% url 'home' %}">Home</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <h2 class="head-title">Gallery</h2>
+                    <a href="images/work-1.jpg" class="gallery image-popup-link text-center"
+                        style="background-image: url('https://images.pexels.com/photos/1205414/pexels-photo-1205414.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');">
+                        <span><i class="icon-search3"></i></span>
+                    </a>
+                    <a href="images/work-2.jpg" class="gallery image-popup-link text-center"
+                        style="background-image: url('https://images.pexels.com/photos/1105766/pexels-photo-1105766.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');">
+                        <span><i class="icon-search3"></i></span>
+                    </a>
+                    <a href="images/work-3.jpg" class="gallery image-popup-link text-center"
+                        style="background-image: url('https://images.pexels.com/photos/1573434/pexels-photo-1573434.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');">
+                        <span><i class="icon-search3"></i></span>
+                    </a>
+                    <a href="images/work-4.jpg" class="gallery image-popup-link text-center"
+                        style="background-image: url('https://images.pexels.com/photos/10916/pexels-photo-10916.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');">
+                        <span><i class="icon-search3"></i></span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</nav>
+
+<div id="imgur-page">
+    <header>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="imgur-navbar-brand">
+                        <a class="imgur-logo" href="{% url 'home' %}">Imgur</a>
+                    </div>
+                    <a href="#" class="js-imgur-nav-toggle imgur-nav-toggle"><i></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <a class="tm-imgur-logo mb-5" href="#">CATÉGORIE | </a>
+                    <a class="tm-imgur-logo mb-5" href="{% url 'location' %}"> ENDROIT </a>
+                </div>
+            </div>
+        </div>
+
+    </header>
+</div>
+
+<div class="container">
+
+    <div class="tm-container">
+
+        <div class="tm-item"
+            style="height: 140px; background-image: url('https://images.pexels.com/photos/1097893/pexels-photo-1097893.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940'); background-size: cover;">
+            <a href="" class="gallery image-popup-link text-center">
+                <span><i class="icon-search3"></i></span>
+            </a></div>
+        <div class="tm-item"
+            style="height: 190px; background-image: url('https://images.pexels.com/photos/1029783/pexels-photo-1029783.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940'); background-size: cover;">
+        </div>
+        <div class="tm-item"
+            style="height: 170px; background-image: url('https://images.pexels.com/photos/2080971/pexels-photo-2080971.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940'); background-size: cover; ">
+        </div>
+        <div class="tm-item"
+            style="height: 120px; background-image: url('https://images.pexels.com/photos/551590/pexels-photo-551590.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940'); background-size: cover; ">
+        </div>
+        <div class="tm-item"
+            style="height: 160px; background-image: url('https://images.pexels.com/photos/267858/pexels-photo-267858.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940'); background-size: cover; ">
+        </div>
+        <div class="tm-item"
+            style="height: 180px; background-image: url('https://images.pexels.com/photos/1389098/pexels-photo-1389098.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940'); background-size: cover; ">
+        </div>
+        <div class="tm-item"
+            style="height: 140px; background-image: url('https://images.pexels.com/photos/1460036/pexels-photo-1460036.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500'); background-size: cover; ">
+            <p>CITY</p>
+        </div>
+
+        <div class="tm-item"
+            style="height: 140px; background-image: url('https://images.pexels.com/photos/1667850/pexels-photo-1667850.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940'); background-size: cover; ">
+            <p>CITY</p>
+        </div>
+
+    </div>
+
+    <div class="container">
+        <ul class="nav navbar-nav list-inline text-center">
+            <!-- {% for category in category %}
+            <li class="list-inline-item"><a class="tm-imgur-logo mb-5" href="index.html">
+                    |{{category.category_name}}|</a></li>
+            {% endfor %} -->
+            
+        </ul>
+
+
+        <div class="container">
+            <div class="row masonry-grid">
+                <div class="col-md-6 col-lg-4 masonry-column">
+                    <div>
+                        {% for image in images %}
+                        {% if image.id <= 7 %}
+                        <a href="#" class="thumbnail"><img id="myImg" alt="{{image.img_location}} | {{image.img_description}} | {{image.image.url}}" src="{{image.image.url}}"></a>
+                        {% endif %}
+                        {% endfor %}
+                        <div id="myModal" class="modal">
+
+                            <!-- The Close Button -->
+                            <span class="close">&times;</span>
+
+                            <!-- Modal Content (The Image) -->
+                            <img class="modal-content" id="img01">
+
+                            <!-- Modal Caption (Image Text) -->
+                            <div id="caption"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 masonry-column">
+                    <div>
+                        {% for image in images %}
+                        {% if image.id > 7  and image.id <= 11 %}
+                        <a href="#" class="thumbnail"><img id="myImg" alt="Snow" src="{{image.image.url}}"></a>
+                        {% endif %}
+                        {% endfor %}
+                        <div id="myModal" class="modal">
+
+                            <!-- The Close Button -->
+                            <span class="close">&times;</span>
+
+                            <!-- Modal Content (The Image) -->
+                            <img class="modal-content" id="img01">
+
+                            <!-- Modal Caption (Image Text) -->
+                            <div id="caption"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 masonry-column">
+                    <div>
+                        {% for image in images %}
+                        {% if image.id > 11 and image.id <= 14 %}
+                        <a href="#" class="thumbnail"><img id="myImg" alt="Snow" src="{{image.image.url}}"></a>
+                        {% endif %}
+                        {% endfor %}
+                        <div id="myModal" class="modal">
+
+                            <!-- The Close Button -->
+                            <span class="close">&times;</span>
+
+                            <!-- Modal Content (The Image) -->
+                            <img class="modal-content" id="img01">
+
+                            <!-- Modal Caption (Image Text) -->
+                            <div id="caption"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        {% endblock %}

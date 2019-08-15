@@ -1,0 +1,152 @@
+{% extends 'layout.html'%}
+{% load static %}
+{% block content %}
+<nav id="imgur-main-nav" role="navigation">
+    <a href="#" class="js-imgur-nav-toggle imgur-nav-toggle active"><i></i></a>
+    <div class="js-fullheight imgur-table">
+        <div class="imgur-table-cell js-fullheight">
+            <div class="row">
+                <div class="col-md-12">
+                    <form action="{% url 'search_results' %}" role="search">
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="search" placeholder="Enter any key to search..."
+                                name="article">
+                            <button type="submit" class="btn "><i class="icon-search3"></i></button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <ul>
+                        <li class="active"><a href="{% url 'home' %}">Home</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <h2 class="head-title">Gallery</h2>
+                    <a href="images/work-1.jpg" class="gallery image-popup-link text-center"
+                        style="background-image: url('https://images.pexels.com/photos/1205414/pexels-photo-1205414.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');">
+                        <span><i class="icon-search3"></i></span>
+                    </a>
+                    <a href="images/work-2.jpg" class="gallery image-popup-link text-center"
+                        style="background-image: url('https://images.pexels.com/photos/1105766/pexels-photo-1105766.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');">
+                        <span><i class="icon-search3"></i></span>
+                    </a>
+                    <a href="images/work-3.jpg" class="gallery image-popup-link text-center"
+                        style="background-image: url('https://images.pexels.com/photos/1573434/pexels-photo-1573434.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');">
+                        <span><i class="icon-search3"></i></span>
+                    </a>
+                    <a href="images/work-4.jpg" class="gallery image-popup-link text-center"
+                        style="background-image: url('https://images.pexels.com/photos/10916/pexels-photo-10916.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');">
+                        <span><i class="icon-search3"></i></span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</nav>
+
+<div id="imgur-page">
+    <header>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="imgur-navbar-brand">
+                        <a class="imgur-logo" href="{% url 'home' %}">Imgur</a>
+                    </div>
+                    <a href="#" class="js-imgur-nav-toggle imgur-nav-toggle"><i></i></a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div id="imgur-hero" class="js-fullheight">
+        <div class="owl-carousel">
+            <div class="item">
+                <div class="hero-flex js-fullheight">
+                    <div class="col-three-forth">
+                        <div class="hero-img js-fullheight"
+                            style="background-image: url('https://images.pexels.com/photos/141651/people-portrait-child-poverty-141651.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');">
+                        </div>
+                    </div>
+                    <div class="col-one-forth js-fullheight">
+                        <div class="display-t js-fullheight">
+                            <div class="display-tc js-fullheight">
+
+                                <div class="text-inner">
+                                    <div class="desc">
+                                        <span class="tag">People</span>
+                                        <h2>Photographing the world's people.</h2>
+                                        <p style="text-transform: uppercase;">A small river named Duden flows by their
+                                            place and supplies it with the necessary regelialia. It is a paradisematic
+                                            country, in which roasted parts of sentences fly into your mouth.</p>
+                                        <p><a href="{% url 'gallery' %}" class="btn-view">View Galleries <i
+                                                    class="icon-arrow-right3"></i></a></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="hero-flex js-fullheight">
+                    <div class="col-three-forth">
+                        <div class="hero-img js-fullheight"
+                            style="background-image: url('https://images.pexels.com/photos/1203819/pexels-photo-1203819.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');">
+                        </div>
+
+                    </div>
+                    <div class="col-one-forth js-fullheight">
+                        <div class="display-t js-fullheight">
+                            <div class="display-tc js-fullheight">
+
+                                <div class="text-inner">
+                                    <div class="desc">
+                                        <span class="tag">Photography</span>
+                                        <h2>Capture Interesting Moments.</h2>
+                                        <p style="text-transform: uppercase;">A small river named Duden flows by their
+                                            place and supplies it with the necessary regelialia. It is a paradisematic
+                                            country, in which roasted parts of sentences fly into your mouth.</p>
+                                        <p><a href="work.html" class="btn-view">View Galleries <i
+                                                    class="icon-arrow-right3"></i></a></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="hero-flex js-fullheight">
+                    <div class="col-three-forth">
+                        <div class="hero-img js-fullheight"
+                            style="background-image: url('https://images.pexels.com/photos/988872/pexels-photo-988872.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');">
+                        </div>
+                    </div>
+                    <div class="col-one-forth js-fullheight">
+
+                        <div class="display-t js-fullheight">
+                            <div class="display-tc js-fullheight">
+                                <div class="text-inner">
+                                    <div class="desc">
+                                        <span class="tag">Discover</span>
+                                        <h2>Discover Contemporary Art</h2>
+                                        <p style="text-transform: uppercase;">A small river named Duden flows by their
+                                            place and supplies it with the necessary regelialia. It is a paradisematic
+                                            country, in which roasted parts of sentences fly into your mouth.</p>
+                                        <p><a href="work.html" class="btn-view">View Galleries <i
+                                                    class="icon-arrow-right3"></i></a></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+{% endblock %}
